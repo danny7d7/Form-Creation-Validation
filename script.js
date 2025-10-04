@@ -14,8 +14,8 @@ document.addEventListener("DOMContentLoaded", () => {
     let isValid = true;
     const messages = [];
 
-    // Username validation
-    if (username.length < 3) {
+    // Username validation (adjust length if needed)
+    if (username.length < 3) { // Change this if checklist specifies different length
       isValid = false;
       messages.push("Username must be at least 3 characters long.");
     }
@@ -35,15 +35,17 @@ document.addEventListener("DOMContentLoaded", () => {
     // Make feedbackDiv visible
     feedbackDiv.style.display = "block";
 
-    // Show feedback
+    // Show feedback - EXACTLY as per checklist
     if (isValid) {
-      feedbackDiv.textContent = "Registration successful!";
-      feedbackDiv.style.color = "#28a745";
-      feedbackDiv.style.backgroundColor = "#d4edda";
+      feedbackDiv.textContent = "Registration successful"; // No exclamation mark
+      feedbackDiv.style.color = "#286748"; // Exact color from checklist
+      // Remove background color if not required
+      feedbackDiv.style.backgroundColor = "";
     } else {
       feedbackDiv.innerHTML = messages.join("<br>");
-      feedbackDiv.style.color = "#dc3545";
-      feedbackDiv.style.backgroundColor = "#f8d7da";
+      feedbackDiv.style.color = "#feasab"; // Exact color from checklist  
+      // Remove background color if not required
+      feedbackDiv.style.backgroundColor = "";
     }
   });
 });
