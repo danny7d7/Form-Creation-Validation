@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContent", () => {
     // Form Selection
     const form = document.getElementById("registration-form");
     
