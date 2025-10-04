@@ -1,4 +1,4 @@
-const fetchUserData = async () => {
+async function fetchUserData () {
     // Using the URL from your original working code
     const apiUrl = 'https://jsonplaceholder.typicode.com/users';
     
